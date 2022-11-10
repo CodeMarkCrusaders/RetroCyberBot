@@ -1,0 +1,22 @@
+[
+    {
+        "id" : "normal_healing",
+        "desp" : "None",
+        "name" : "Лечение",
+        "triger" : {
+            "AND" : [
+                {   
+                    "field" : ["ActionStat","EquipedWeapon","general","strength"],
+                    "con" : "fracture"
+                }
+            ]
+        },
+        "heal" : [
+            {
+                "limb": ["all"],    
+                "regen_ed" : "4",    
+                "regen_am_max" : "0.1"
+            }
+        ]
+    }
+]

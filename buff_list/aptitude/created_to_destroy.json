@@ -1,0 +1,29 @@
+[
+    {
+        "id" : "created_to_destroy",
+        "name" : "Создан разрушать",
+        "desp" : "+5 % к шансу критического урона.\n +15 % к скорости износа снаряжения",
+        "mod" : [
+            {
+                "field" : ["ActionStat","MelleAttackStat","CritAttackChance"],
+                "ed" : true,
+                "n"  : "5"
+            },
+            {
+                "field" : ["ActionStat","MelleAttackStat","CritAttackChance"],
+                "ed" : true,
+                "n"  : "5"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","WearFactorAm"],
+                "ed" : true,
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","WearFactorAm"],
+                "ed" : true,
+                "n"  : "0.15"
+            }
+        ]
+    }
+]

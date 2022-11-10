@@ -1,0 +1,19 @@
+{
+    "general" : {
+        "id" : "None",
+        "name": "None",
+        "desp": "None",
+        "cost" : "None",
+        "strength" : ["inf","inf"],
+        "fracture" : 100,
+        "weight" : "0",
+        "type" : []
+    },  
+    "cloth" : {
+        "F": 1,
+        "M": 1,
+        "limb" : ["Head"],
+        "buff" : []
+    }
+}
+

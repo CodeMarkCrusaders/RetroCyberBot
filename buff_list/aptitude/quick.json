@@ -1,0 +1,50 @@
+[
+    {
+        "id" : "quick",
+        "name" : "Шустрик",
+        "desp" : "+1 ЛОВ. Скорость увеличиная на 2 метра. Урон конечностям увеличен на 15%",
+        "mod" : [
+            {
+                "field" : ["ActionStat","Speed"],
+                "ed" : true,
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","Head","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","Body","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","BLL","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","BRL","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","FLL","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","FRL","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","WR","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","WL","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            },
+            {
+                "field" : ["VitalStat","Horn","Health","DmgFactorAm"],
+                "n"  : "0.15"
+            }
+        ]
+    }
+]

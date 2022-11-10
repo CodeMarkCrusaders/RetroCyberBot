@@ -1,0 +1,17 @@
+[
+    {
+        "id" : "heavy_hand",
+        "name" : "Тяжёлая рука",
+        "desp" : "+6 урона в ближнем бою.\n Все Атаки в ближнем бою стоят на 1 очко больше.",
+        "mod" : [
+            {
+                "field" : ["ActionStat","MelleAttackStat","DamagFactorEd"],
+                "n"  : "6"
+            },
+            {
+                "field" : ["ActionStat","MelleAttackStat",["AimedAttackFactor","QueueAttackFactor","AttackFactor"]],
+                "n"  : "1"
+            }
+        ]
+    }
+]

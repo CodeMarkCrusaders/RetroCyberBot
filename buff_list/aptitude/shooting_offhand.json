@@ -1,0 +1,21 @@
+[
+    {
+        "id" : "shooting_offhand",
+        "name" : "Стрельба навскидку",
+        "desp" : "Стрельба требует на 1 очко меньше, невозможна прицельная стрельба",
+        "mod" : [
+            {
+                "field" : ["ActionStat","RangeAttackStat","AimedAttackFactor"],
+                "n"  : "100"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","AttackFactor"],
+                "n"  : "-1"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","QueueAttackFactor"],
+                "n"  : "-1"
+            }
+        ]
+    }
+]

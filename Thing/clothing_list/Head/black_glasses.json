@@ -1,0 +1,62 @@
+{
+    "general" : {
+        "id" : "black_glasses",
+        "name": "Черные Очки",
+        "desp": "Крутой вид",
+        "cost" : "30",
+        "strength" : [6,6],
+        "fracture" : 0,
+        "weight" : "0.1",
+        "type" : ["glass"]
+    },  
+    "cloth" : {
+        "F": 2,
+        "M": 1,
+        "limb" : ["Head"],
+        "buff" : [
+            {   
+                "id" : "black_glasses_1",
+                "name" : "Черные Очки",
+                "desp" : "Увеличина Удача",
+                "mod" : [
+                    {
+                        "field" : ["Special","L"],
+                        "n"  : 1
+                    }
+                ]
+            },
+            {   
+                "id" : "black_glasses_2",
+                "name" : "Черные Очки",
+                "desp" : "Увеличина Удача",
+                "triger" : {
+                    "AND" : [
+                        {
+                            "field" : ["Hit","Weapon"],
+                            "con" : "in",
+                            "n" : "pistol"
+                        }
+                    ]
+                },
+                "mod" : [
+                    {
+                        "field" : ["VitalStat","Head","Armor","F"],
+                        "n"  : 5
+                    }
+                ]
+            }
+        ]
+    },
+    "weapon" : {
+        "melee" :{
+            "WearFactorAm" : "2",
+            "DamagFactorAm" : "-0.2",
+            "ability" : ["melee_weapons"]
+        },
+        "quit" :{
+            "WearFactorAm" : "2",
+            "DamagFactorAm" : "-0.2",
+            "ability" : ["quit"]
+        }
+    }
+}

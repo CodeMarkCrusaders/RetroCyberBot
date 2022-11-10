@@ -1,0 +1,38 @@
+[
+    {
+        "id" : "hot_blood",
+        "name" : "Горячая кровь",
+        "desp" : "ВСП и NНТ -2. Весь урон увеличен на %45",
+        "triger" : {
+            "AND" : [
+                {
+                    "field" : ["VitalStat","Hp_pct"],
+                    "con" : "<",
+                    "n" : "0.5"
+                }
+            ]
+        },
+        "mod" : [
+            {
+                "field" : ["Special","P"],
+                "ed" : true,
+                "n"  : "-1"
+            },
+            {
+                "field" : ["Special","I"],
+                "ed" : true,
+                "n"  : "-2"
+            },
+            {
+                "field" : ["Special","S"],
+                "ed" : true,
+                "n"  : "1"
+            },
+            {
+                "field" : ["ActionStat","Attackdata","DamagFactorAm"],
+                "ed" : true,
+                "n"  : "0.45"
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+"buff" : [
+        {
+            "id": "black_glasses",
+            "triger" : {
+                "OR" : [
+                    {
+                        "field" : ["special","P"],
+                        "con" : "<",
+                        "n" : 1
+                    },
+                    {
+                        "field" : ["special","A"],
+                        "con" : "<",
+                        "n" : 2
+                    }
+                ],
+                "AND" : [
+                    {
+                        "field" : ["special","P"],
+                        "con" : "<",
+                        "n" : 1
+                    }
+                ]
+            },
+            "mod" : [
+                {
+                    "field" : ["special","L"],
+                    "ed" : true,
+                    "n"  : 1
+                }
+            ]
+        }
+    ]

@@ -1,0 +1,21 @@
+[
+    {
+        "id" : "trained",
+        "name" : "Тренированный",
+        "desp" : "-10% опыта, но все навыки увеличины на 10",
+        "mod" : [
+            {
+                "field" : ["lvl","ExpFactor"],
+                "ed" : true,
+                "n"  : "-0.1"
+            },
+            {
+                "field" : ["Ability",["science", "medicine", "repair", "barter", "speech", "lockpick", "energy_weapons", "explosives", "throwing", "melee_weapons", "big_guns", "unarmed", "small_guns", "sneak", "fly", "magic"]],
+                "ed" : true,
+                "n"  : "-2"
+            }
+        ]
+    }
+]
+
+

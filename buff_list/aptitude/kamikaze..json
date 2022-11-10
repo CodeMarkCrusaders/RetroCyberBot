@@ -1,0 +1,58 @@
+[
+    {
+        "id" : "kamikaze",
+        "name" : "Камикадзе",
+        "desp" : "+1 к ОД, получаемый урон увеличен на 2.",
+        "mod" : [
+            {
+                "field" : ["ActionStat","Speed"],
+                "ed" : true,
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","Head","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","Body","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","BLL","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","BRL","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","FLL","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","FRL","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","WR","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","WL","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["VitalStat","Horn","Health","DmgFactorEd"],
+                "n"  : "2"
+            },
+            {
+                "field" : ["ActionStat","Ap"],
+                "n"  : "1"
+            },
+            {
+                "field" : ["ActionStat","Ap_Max"],
+                "n"  : "1"
+            }
+        ]
+    }
+]

@@ -1,0 +1,1 @@
+{"name": "asd", "gender": "man", "race": "griffin", "question_number": 0, "room_0": 1, "room_1": 2, "room_2": 3, "room_3": 4, "room_4": 1, "room_5": 2, "room_6": 3, "room_7": 4, "room_8": 1, "room_9": 2, "trait_1": "four_eyes", "trait_2": "hot_blood", "screen_name": "reg_stage3"}

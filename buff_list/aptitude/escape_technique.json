@@ -1,0 +1,21 @@
+[
+    {
+        "id" : "escape_technique",
+        "name" : "Техника спуска",
+        "desp" : "Прицельная стрельба стоит на 1 очко меньше.\nСтрельба очередями невозможна.",
+        "mod" : [
+            {
+                "field" : ["ActionStat","RangeAttackStat","QueueAttackFactor"],
+                "n"  : "100"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","AimedAttackFactor"],
+                "n"  : "-1"
+            },
+            {
+                "field" : ["ActionStat","RangeAttackStat","AttackFactor"],
+                "n"  : "1"
+            }
+        ]
+    }
+]

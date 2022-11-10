@@ -1,0 +1,44 @@
+[
+    {
+        "id" : "four_eyes_off",
+        "name" : "Четыре глаза",
+        "desp" : "Без очков: ВСП. - 1",
+        "triger" : {
+            "NOT" : [
+                {
+                    "field" : ["VitalStat","Head","EquippedArmor","general","type"],
+                    "con" : "in",
+                    "n" : "glass"
+                }
+            ]
+        },
+        "mod" : [
+            {
+                "field" : ["Special","P"],
+                "ed" : true,
+                "n"  : -1
+            }
+        ]
+    },
+    {
+        "id" : "four_eyes_on",
+        "name" : "Четыре глаза",
+        "desp" : "Очки оденты: ВСП. +2",
+        "triger" : {
+            "AND" : [
+                {
+                    "field" : ["VitalStat","Head","EquippedArmor","general","type"],
+                    "con" : "in",
+                    "n" : "glass"
+                }
+            ]
+        },
+        "mod" : [
+            {
+                "field" : ["Special","P"],
+                "ed" : true,
+                "n"  : 2
+            }
+        ]
+    }
+]

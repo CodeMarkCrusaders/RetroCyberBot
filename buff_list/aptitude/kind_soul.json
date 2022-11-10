@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "kind_soul",
+        "name" : "Добрая душа",
+        "desp" : "+10 к всем не боевым и -10 к боевым навыкам.",
+        "mod" : [
+            {
+                "field" : ["Ability",["science", "medicine", "repair", "barter", "speech", "lockpick", "throwing","sneak", "fly"]],
+                "ed" : true,
+                "n"  : "10"
+            },
+            {
+                "field" : ["Ability",["energy_weapons", "explosives","melee_weapons", "big_guns", "unarmed", "small_guns","magic"]],
+                "ed" : true,
+                "n"  : "-10"
+            }
+        ]
+    }
+]

@@ -1,0 +1,49 @@
+{
+    "general" : {
+        "id" : "healing_potion",
+        "name": "Лечебное зелье",
+        "desp": "Лечит, а что еще может делать лечебное зелье",
+        "cost" : "50",
+        "strength" : [10,10],
+        "weight" : "0.5",
+        "fracture" : 0,
+        "type" : ["preparation"]
+    },
+    "weapon" : {
+        "melee" :{
+            "WearFactorAm" : "2",
+            "DamagFactorAm" : "1.2",
+            "ability" : ["melee_weapons"],
+            "buff_enemy" : [
+                {
+                    "id" : "normal_healing_enemy"
+                }
+            ],
+            "buff_self" : [
+                {
+                    "id" : "normal_healing_self"
+                }
+            ]
+        },
+        "quit" : {
+            "WearFactorAm" : "2",
+            "DamagFactorAm" : "0.8",
+            "ability" : ["quit"],
+            "buff_enemy" : [
+                {
+                    "id" : "normal_healing_enemy"
+                }
+            ]
+        }
+    },
+    "do" : {
+        "heal" : [
+            {
+                "limb": ["all"],    
+                "regen_ed" : "4",    
+                "regen_am_max" : "0.1"
+            }
+        ]
+        
+    }
+}

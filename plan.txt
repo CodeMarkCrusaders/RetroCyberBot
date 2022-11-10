@@ -1,0 +1,132 @@
+{
+    "general" : {
+        "name": "Черные Очки",
+        "desp": "Крутой вид"
+        "cost" : "30",
+        "strength" : "10",
+        "weight" : "0.15",
+        "type" : ["glass"]
+    },  
+    "cloth" : {
+        "F": 1,
+        "M": 1,
+        "limb" : ["Head"],
+        "buff" : [
+            {   
+                "id" : "black_glasses",
+                "name" : "Черные Очки",
+                "desp" : "Увеличина Удача",
+                "mod" : [
+                    {
+                        "field" : ["Special","L"],
+                        "ed" : true,
+                        "n"  : 1
+                    }
+                ]
+            }
+        ]
+    },
+    "melee" :{
+        "WearFactorAm" : "2",
+        "DamagFactorAm" : "0.8"
+    },
+    "range" :{
+        "WearFactorAm" : "2",
+        "DamagFactorAm" : "0.8"
+    }
+}
+
+
+
+{
+    "general" : {
+        "id" : "healing_potion"
+        "name": "Лечебное зелье",
+        "desp": "Лечит, а что еще может делать лечебное зелье"
+        "cost" : "50",
+        "strength" : None,
+        "weight" : "0.33",
+        "type" : ["preparation"]
+    },  
+    "melee" :{
+        "WearFactorAm" : "2",
+        "DamagFactorAm" : "0.8"
+        "buff_enemy" : [
+            {
+                "id" : "normal_healing",
+                "name" : "Лечение",
+                "triger" : {
+                    "AND" : [
+                        {
+                            "field" : ["self","strength"],
+                            "con" : "<",
+                            "n" : 1
+                        }
+                    ]
+                },
+                "heal" : [
+                    {    
+                        "time" : "3",   
+                        "regen_ed" : "2",    
+                        "regen_am_max" : "2", 
+                    }
+                ]
+            }
+        ],
+        "buff_self" : [
+            {
+                "id" : "normal_healing",
+                "name" : "Лечение",
+                "triger" : {
+                    "AND" : [
+                        {
+                            "field" : ["self","strength"],
+                            "con" : "rnd",
+                            "n" : 1
+                        }
+                    ]
+                },
+                "heal" : [
+                    {    
+                        "regen_ed" : "2",    
+                        "regen_am_max" : "4", 
+                    }
+                ]
+            }
+        ]
+    },
+    "range" :{
+        "WearFactorAm" : "2",
+        "DamagFactorAm" : "0.8"
+        "buff_enemy" : [
+            {
+                "id" : "normal_healing",
+                "name" : "Лечение",
+                "triger" : {
+                    "AND" : [
+                        {
+                            "field" : ["self","strength"],
+                            "con" : "<",
+                            "n" : 1
+                        }
+                    ]
+                },
+                "heal" : [
+                    {    
+                        "time" : "3",   
+                        "regen_ed" : "2",    
+                        "regen_am_max" : "4", 
+                    }
+                ]
+            }
+        ],
+    },
+    "do" :{
+        "heal" : [
+            {    
+                "regen_ed" : "2",    
+                "regen_am_max" : "4", 
+            }
+        ]
+    }
+}
